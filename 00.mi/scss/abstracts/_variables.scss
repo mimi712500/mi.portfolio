@@ -79,6 +79,10 @@ $tablet--width: map-get($map:$breakpoints, $key:large);
 $base-url: '/assets/' !default;
 
 
+// font family
+$font-family--Pretendard: 'Pretendard';
+$font-family--GoyangIlsan: 'GoyangIlsan';
+
 
 // font size
 $font-size--16: 16px;
@@ -109,6 +113,6 @@ $text-size--default : $font-size--16 !default;
 $text-color--default : $color--black01 !default;
 $border-color--default : $border-color--gray80 !default;
 $line-height--default : 1.4 !default;
-
+$font-family--default : $font-family--Pretendard !default;
 
 

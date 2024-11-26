@@ -158,6 +158,14 @@ h3 {
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("./../font/Pretendard-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 /**
  * Clear inner floats
@@ -268,7 +276,7 @@ h3 {
 body {
   color: #011014;
   font-style: normal;
-  font-family: "GoyangIlsan";
+  font-family: "Pretendard";
   font-size: 16px;
   line-height: 1.4;
 }
@@ -281,6 +289,10 @@ a, button {
 ::before, ::after {
   font: inherit;
   color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "GoyangIlsan";
 }
 
 h1, h2, h3 {
@@ -311,6 +323,10 @@ h3 {
   font-size: 130px;
   font-weight: 400;
   opacity: 0.2;
+}
+
+.email {
+  font-family: "GoyangIlsan";
 }
 
 @media screen and (max-width: 768px) {

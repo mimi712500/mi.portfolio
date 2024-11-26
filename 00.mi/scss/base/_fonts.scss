@@ -8,20 +8,14 @@
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
-// 코트라 고딕체
-// @font-face {
-//     font-family: 'KOTRA_GOTHIC';
-//     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
-// 조선굴림체
-// @font-face {
-//     font-family: 'ChosunGu';
-//     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+// 고양일산체
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./../font/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

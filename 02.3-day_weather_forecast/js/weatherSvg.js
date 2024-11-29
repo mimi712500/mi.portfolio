@@ -221,7 +221,7 @@ export const weatherSvg = {
 
                                     
                 </svg>`,
-    // 구름 많음
+    // 구름
     "partly_cloudy" : `<svg version="1.1" id="svgPartlyCloudy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                             viewBox="0 0 512 512" xml:space="preserve">
                             <g class="sun">

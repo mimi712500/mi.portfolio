@@ -1,5 +1,4 @@
 import {weatherSvg} from "./weatherSvg.js";
-// console.log(weatherSvg);
 const WEWTHER_API_KEY = "14f81daf1e494a66afe71318241910";
 const MAPS_PLATFORM_API_KEY = "AIzaSyB14aweftuWa4DkztRzk5_JSU-e9f2xQWo";
 
@@ -59,7 +58,6 @@ function insertData(data){
     today.querySelector(".svg__wrap").innerHTML = insertSvg(current.condition , today.querySelector("span"));
     tomorrow.querySelector(".svg__wrap").innerHTML = insertSvg(current.condition , tomorrow.querySelector("span"));
     dayAfterTomorrow.querySelector(".svg__wrap").innerHTML = insertSvg(current.condition , dayAfterTomorrow.querySelector("span"));
-
     
     const temC = document.querySelector(".temp_c span"); // 현재온도
     const feelslikeC = document.querySelector(".feelslike_c span"); // 체감온도
@@ -108,7 +106,6 @@ function insertData(data){
     itemForEach(sunrise, forecast.forecastday, findKeyArr("astro.sunrise"));
     itemForEach(sunset, forecast.forecastday, findKeyArr("astro.sunset"));
 
-
     backColor();
 };
 // 시간 확인
@@ -128,7 +125,7 @@ const weatherTranslations = {
     "폭풍우" : { svg : weatherSvg.storm, id : "svgStorm", backColor : "rain",},
     "눈" : { svg : weatherSvg.snowy, id : "svgSnowy", backColor : "rain",},
     "흐림" : { svg : weatherSvg.cloudy, id : "svgCloudy", backColor : "rain",},
-    "구름 많음" : { svg : weatherSvg.partly_cloudy, id : "svgPartlySloudy", backColor : null,},
+    "구름" : { svg : weatherSvg.partly_cloudy, id : "svgPartlyCloudy", backColor : null,},
     "맑음" : { svg : weatherSvg.sunny, id : "svgSunny", backColor : null,},
 };
 // 텍스트 일치화
@@ -137,8 +134,8 @@ const weatherTextUnify = {
     "폭풍우" : [],
     "눈" : ["폭설","눈보라"],
     "흐림" : ["흐린", "매우 흐림"],
-    "구름 많음" : ["구름 낀"],
-    "맑음" : ["화창함"],
+    "구름" : ["구름 많음" ,"구름 낀","구름 많은"],
+    "맑음" : ["화창함","대체로 맑음"],
 };
 // 텍스트 통일 시키기
 function textUnify(text){

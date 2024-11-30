@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <title>클론_비앙글로</title>
 
     <!-- css -->
@@ -112,7 +113,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination swiper-pagination--con01"></div>
                     </div>    
                     <p class="scroll__text bi ico__arrow-down-short">Scroll Down</p>
                 </div>
@@ -278,17 +279,22 @@
     </div>
 
    
-    <script>
+    <script defer="defer">
         // contents--01
         var swiper01 = new Swiper(".contents--01 .mySwiper", {
             loop:true,
             effect:"fade",
+            slidesPerView: 1,
+            resizeObserver: true,
+            simulateTouch: true,
+            allowTouchMove:true,
             speed: 2000,
+            fadeEffect: { crossFade: true },
             autoplay:{
                 delay : 3000,
             },
             pagination: {
-                el: ".swiper-pagination",
+                el: ".swiper-pagination--con01",
                 clickable: true,
                 renderBullet: function (index, className) {
                     let idx = String((index + 1));
@@ -296,6 +302,11 @@
                     return '<span class="' + className + '">' + idx + "</span>";
                 },
             },
+            on: {
+                resize: function () {
+                    swiper01.update();
+                }
+            }
         });
 
         // contents--04

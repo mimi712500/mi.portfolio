@@ -39,10 +39,7 @@
     .swiper-pagination-bullet{ position: relative !important; width:unset !important; height:unset !important; border-radius:unset !important; margin: 0 8px 0 0 !important; padding: 0 23px 0 0 !important; vertical-align: middle; line-height: var(--line-height--33); font-size: var(--font-size--22); font-family: var(--font-family--Cormorant); font-weight: var(--font-weight--400); background-color: unset !important;} 
     .swiper-pagination-bullet-active::after{
         content: ""; position: absolute; right: 0; top: 12px;
-        background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23133b00" width="800px" height="800px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M240.58984,128a15.84794,15.84794,0,0,1-10.53125,15.03711l-63.81543,23.206-23.206,63.81543a16.001,16.001,0,0,1-30.07422,0L89.75684,166.24316l-63.81543-23.206a16.001,16.001,0,0,1,0-30.07422L89.75684,89.75684l23.20605-63.81543a16.001,16.001,0,0,1,30.07422,0l23.206,63.81543,63.81543,23.20605A15.84794,15.84794,0,0,1,240.58984,128Z"/></svg>');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
+        background: var(--icon--star) no-repeat center center/ contain;
         width:12px; 
         height: 12px; 
     }
@@ -69,8 +66,8 @@
     .contents--02 .img__wrap,.contents--03 .img__wrap{flex-basis: 50%; flex-shrink: 0; overflow: hidden; max-width: 460px; /*max-height: 643px; height: 100%;*/ border-radius: 20px; }
     .contents--02 .img__wrap img,.contents--03 .img__wrap img{height: 100%; object-fit:cover; aspect-ratio: 460 / 643;}
     .contents--02 .title__wrap,.contents--03 .title__wrap{flex-basis: 50%; margin-top: 105px; }
-    .contents--02 .title__wrap p,.contents--03 .title__wrap p{margin-top: 20px; padding-left: 25px;}
-
+    .contents--02 .title__wrap p,.contents--03 .title__wrap p{position: relative; margin-top: 20px; padding-left: 25px;}
+    .contents--02 .title__wrap p::before,.contents--03 .title__wrap p::before{content: ""; position: absolute; z-index: 1; top: 10px; left: 0; width:12px; height: 12px; display: block; background: var(--icon--star) no-repeat center center/contain; }
     .contents--02 .img__wrap{margin-right: auto;}
     .contents--02 .title__wrap{padding-right: 131px;}
 
@@ -149,7 +146,7 @@
         .contents--02 .img__wrap,.contents--03 .img__wrap{flex-basis: unset; max-width: 460px; /*max-height: 643px; height: 100%;*/ margin: 0 auto; }
         .contents--02 .title__wrap,.contents--03 .title__wrap{flex-basis: unset; margin-top: 0; }
         .contents--02 .title__wrap p,.contents--03 .title__wrap p{margin-top: 20px; padding-left: 25px;}
-
+        .contents--02 .title__wrap p::before,.contents--03 .title__wrap p::before{top: 5px}
         
         /* contents--03 */
         .contents--03 .title--animation h2{font-size: 9vw;}

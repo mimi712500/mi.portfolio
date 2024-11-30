@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <title>클론코딩_NAVER AI RUSH</title>
 
     <!-- css -->
@@ -12,7 +13,7 @@
     <!-- js -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="./../js/lib/swiper-bundle.min.js"></script>
-    <script src="./../js/common.js"></script>
+    <script src="./../js/common.js" defer="defer"></script>
 </head>
 <body>
     <div id="wrap">
@@ -109,7 +110,7 @@
         <footer id="footer"></footer>
     </div>
 
-    <script>
+    <script defer="defer">
         $(function(){
             // review 슬라이드
             var swiper = new Swiper(".section--biz__view .mySwiper", {
